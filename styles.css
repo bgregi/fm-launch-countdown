@@ -1,0 +1,33 @@
+@font-face {
+  font-family: RedHatText-Bold;
+  src: url(fonts/RedHatText-Bold.ttf);
+}
+@font-face {
+  font-family: RedHatText-Medium;
+  src: url(fonts/RedHatText-Medium.ttf);
+}
+@font-face {
+  font-family: RedHatText-Regular;
+  src: url(fonts/RedHatText-Regular.ttf);
+}
+body {
+  font-size: 14px;
+  font-family: RedHatText-Medium, sans-serif;
+  background-image: linear-gradient(0deg, #1e1f29, #191a24);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.stars {
+  background-image: url(images/bg-stars.svg);
+  height: 100%;
+}
+
+footer {
+  background-image: url(images/pattern-hills.svg);
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+/*# sourceMappingURL=styles.css.map */
