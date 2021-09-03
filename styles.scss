@@ -2,25 +2,23 @@
 
 // ### Primary
 
-// - Grayish blue: 
+// - Grayish blue:
 $grayish-blue: hsl(237, 18%, 59%);
 
-// - Soft red: 
+// - Soft red:
 $soft-red: hsl(345, 95%, 68%);
 
 // ### Neutral
 
 // - White: hsl(0, 0%, 100%)
-// - Dark desaturated blue: 
+// - Dark desaturated blue:
 $d-desat-blue: hsl(236, 21%, 26%);
 
-// - Very dark blue: 
+// - Very dark blue:
 $v-dark-blue: hsl(235, 16%, 14%);
 
-// - Very dark (mostly black) blue: 
+// - Very dark (mostly black) blue:
 $vd-black-blue: hsl(234, 17%, 12%);
-
-
 
 @font-face {
     font-family: RedHatText-Bold;
@@ -35,13 +33,12 @@ $vd-black-blue: hsl(234, 17%, 12%);
     src: url(fonts/RedHatText-Regular.ttf);
 }
 
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////MOBILE LAYOUT/////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-// html {
-//     background-image: linear-gradient(135deg, $vd-black-blue, $v-dark-blue);
-// }
+html {
+    width: 100%;
+}
 
 body {
     font-size: 14px;
@@ -52,31 +49,86 @@ body {
     background-size: 100%;
 
     height: 100vh;
+    width: 100%;
 
-    // background-color: $vd-black-blue;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .stars {
     background-image: url(images/bg-stars.svg);
+    background-size: 200%;
 
     height: 100%;
+}
 
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+
+    font-size: 17px;
+
+    margin: 150px 60px 40px;
+}
+
+.timer {
+    height: 100px;
+    margin: 0 0 200px;
+
+    border: 1px solid red;
 }
 
 footer {
-    background-image: url(images/pattern-hills.svg);
-    background-repeat: no-repeat;
-    height: 150px;
+    width: 100%;
+
+    .hills-bg {
+        background-image: url(images/pattern-hills.svg);
+        background-repeat: no-repeat;
+        background-size: 230%;
+        background-position-x: 90%;
+        background-color: $v-dark-blue;
+
+        // border: 1px solid red;
+
+        height: 100px;
+        width: 100%;
+    }
+    .socials {
+        background-color: #2F2439;
+        
+        width: 100%;
+        height: 60px;
+        
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        
+        img {
+            margin: 0 15px;
+            
+            width: 25px;
+        }
+    }
+    .attribution {
+        background-color: #2F2439;
+        text-align: center;
+        height: 40px;
+
+        a {
+            color: $grayish-blue;
+        }
+
+    }
 }
-
-
-
-
-
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////DESKTOP LAYOUT/////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
