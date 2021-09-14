@@ -45,7 +45,6 @@ body {
     font-family: RedHatText-Medium, sans-serif;
 
     background-image: linear-gradient(0deg, $v-dark-blue, $vd-black-blue);
-    background-repeat: no-repeat;
     background-size: 100%;
 
     height: 100vh;
@@ -79,23 +78,18 @@ h1 {
 .timer {
     box-sizing: border-box;
     height: 100px;
-    margin: 0 0 200px;
-    // padding: 0 20px;
-
-    // border: 1px solid red;
+    margin: 0 5px 200px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-around;
+
     .card-and-description {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        position: relative;
-
-        margin: 10px;
+        margin: 3px;
 
         .card {
             width: 70px;
@@ -109,14 +103,21 @@ h1 {
             justify-content: center;
         }
         .card-top {
-            height: 32.5px;
+            height: 31.5px;
 
             background-color: $d-desat-blue;
             border-radius: 5px;
             box-shadow: 0px 8px 3px -5px $vd-black-blue;
+
+            // opacity: 0.5;
+
+            p {
+                position: relative;
+                top: 15px;
+            }
         }
         .card-bottom {
-            height: 32.5px;
+            height: 31.5px;
 
             background-color: $d-desat-blue;
             border-radius: 5px;
@@ -124,15 +125,12 @@ h1 {
         }
 
         span {
-            top: 15px;
-            
             font-family: RedHatText-Bold;
             color: $grayish-blue;
             letter-spacing: 3px;
             font-size: 7px;
 
             margin: 15px 0 0;
-
         }
     }
 }
@@ -153,30 +151,29 @@ footer {
         width: 100%;
     }
     .socials {
-        background-color: #2F2439;
-        
+        background-color: #2f2439;
+
         width: 100%;
         height: 60px;
-        
+
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        
+
         img {
             margin: 0 15px;
-            
+
             width: 25px;
         }
     }
     .attribution {
-        background-color: #2F2439;
+        background-color: #2f2439;
         text-align: center;
         height: 40px;
 
         a {
             color: $grayish-blue;
         }
-
     }
 }
 
@@ -185,4 +182,56 @@ footer {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media only screen and (min-width: 600px) {
+    .stars {
+        background-size: 75%;
+        // background-repeat: no-repeat;
+
+        height: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 120px 0px 60px;
+    }
+
+    .timer {
+        height: 200px;
+        margin: 0 400px 200px;
+
+        justify-content: space-around;
+
+        .card-and-description {
+
+            .card {
+                width: 130px;
+
+                font-size: 70px;
+            }
+            .card-top {
+                height: 58.5px;
+
+                p {
+                    top: 27px;
+                }
+            }
+            .card-bottom {
+                height: 58.5px;
+
+                margin-top: 1px;
+
+                box-shadow: 0px 12px 3px -5px $vd-black-blue;
+            }
+
+            span {
+                letter-spacing: 5px;
+                font-size: 12px;
+
+                margin: 20px 0 0;
+            }
+        }
+    }
+
+
+
+    
 }

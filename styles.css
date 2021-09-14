@@ -18,7 +18,6 @@ body {
   font-size: 14px;
   font-family: RedHatText-Medium, sans-serif;
   background-image: linear-gradient(0deg, #1e1f29, #191a24);
-  background-repeat: no-repeat;
   background-size: 100%;
   height: 100vh;
   width: 100%;
@@ -46,17 +45,16 @@ h1 {
 .timer {
   box-sizing: border-box;
   height: 100px;
-  margin: 0 0 200px;
+  margin: 0 5px 200px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .timer .card-and-description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  margin: 10px;
+  margin: 3px;
 }
 .timer .card-and-description .card {
   width: 70px;
@@ -68,19 +66,22 @@ h1 {
   justify-content: center;
 }
 .timer .card-and-description .card-top {
-  height: 32.5px;
+  height: 31.5px;
   background-color: #343650;
   border-radius: 5px;
   box-shadow: 0px 8px 3px -5px #191a24;
 }
+.timer .card-and-description .card-top p {
+  position: relative;
+  top: 15px;
+}
 .timer .card-and-description .card-bottom {
-  height: 32.5px;
+  height: 31.5px;
   background-color: #343650;
   border-radius: 5px;
   box-shadow: 0px 8px 3px -5px #191a24;
 }
 .timer .card-and-description span {
-  top: 15px;
   font-family: RedHatText-Bold;
   color: #8486a9;
   letter-spacing: 3px;
@@ -101,7 +102,7 @@ footer .hills-bg {
   width: 100%;
 }
 footer .socials {
-  background-color: #2F2439;
+  background-color: #2f2439;
   width: 100%;
   height: 60px;
   display: flex;
@@ -113,12 +114,50 @@ footer .socials img {
   width: 25px;
 }
 footer .attribution {
-  background-color: #2F2439;
+  background-color: #2f2439;
   text-align: center;
   height: 40px;
 }
 footer .attribution a {
   color: #8486a9;
+}
+
+@media only screen and (min-width: 600px) {
+  .stars {
+    background-size: 75%;
+    height: 100%;
+    width: 100%;
+  }
+
+  h1 {
+    margin: 120px 0px 60px;
+  }
+
+  .timer {
+    height: 200px;
+    margin: 0 400px 200px;
+    justify-content: space-around;
+  }
+  .timer .card-and-description .card {
+    width: 130px;
+    font-size: 70px;
+  }
+  .timer .card-and-description .card-top {
+    height: 58.5px;
+  }
+  .timer .card-and-description .card-top p {
+    top: 27px;
+  }
+  .timer .card-and-description .card-bottom {
+    height: 58.5px;
+    margin-top: 1px;
+    box-shadow: 0px 12px 3px -5px #191a24;
+  }
+  .timer .card-and-description span {
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin: 20px 0 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
