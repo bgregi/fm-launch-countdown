@@ -10,9 +10,6 @@ let x = setInterval(function() {
   // Find the distance between now and the count down date
   let distance = launchDate - now;
 
-  console.log(now)
-  console.log(distance)
-
 
   // Time calculations for days, hours, minutes and seconds
   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -27,3 +24,6 @@ let x = setInterval(function() {
   document.getElementById("seconds").innerHTML = seconds
 
 }, 1000);
+
+console.log(Date.parse(new Date()))
+console.log(new Date().getTime())

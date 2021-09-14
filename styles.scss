@@ -93,15 +93,12 @@ h1 {
         flex-direction: column;
         align-items: center;
 
+        position: relative;
+
         margin: 10px;
 
         .card {
             width: 70px;
-            height: 65px;
-
-            background-color: $d-desat-blue;
-            border-radius: 5px;
-            box-shadow: 0px 8px 3px -5px $vd-black-blue;
 
             color: $soft-red;
             font-size: 37px;
@@ -111,8 +108,24 @@ h1 {
             align-items: center;
             justify-content: center;
         }
+        .card-top {
+            height: 32.5px;
+
+            background-color: $d-desat-blue;
+            border-radius: 5px;
+            box-shadow: 0px 8px 3px -5px $vd-black-blue;
+        }
+        .card-bottom {
+            height: 32.5px;
+
+            background-color: $d-desat-blue;
+            border-radius: 5px;
+            box-shadow: 0px 8px 3px -5px $vd-black-blue;
+        }
 
         span {
+            top: 15px;
+            
             font-family: RedHatText-Bold;
             color: $grayish-blue;
             letter-spacing: 3px;

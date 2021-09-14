@@ -55,14 +55,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   margin: 10px;
 }
 .timer .card-and-description .card {
   width: 70px;
-  height: 65px;
-  background-color: #343650;
-  border-radius: 5px;
-  box-shadow: 0px 8px 3px -5px #191a24;
   color: #fb6087;
   font-size: 37px;
   font-family: RedHatText-Bold;
@@ -70,7 +67,20 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+.timer .card-and-description .card-top {
+  height: 32.5px;
+  background-color: #343650;
+  border-radius: 5px;
+  box-shadow: 0px 8px 3px -5px #191a24;
+}
+.timer .card-and-description .card-bottom {
+  height: 32.5px;
+  background-color: #343650;
+  border-radius: 5px;
+  box-shadow: 0px 8px 3px -5px #191a24;
+}
 .timer .card-and-description span {
+  top: 15px;
   font-family: RedHatText-Bold;
   color: #8486a9;
   letter-spacing: 3px;
