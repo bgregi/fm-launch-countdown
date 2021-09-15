@@ -50,6 +50,16 @@ h1 {
   align-items: center;
   justify-content: space-around;
 }
+.timer .shadow {
+  height: 31.5px;
+  width: 70px;
+  background-color: black;
+  opacity: 0.2;
+  position: relative;
+  top: 31.5px;
+  z-index: 1;
+  border-radius: 5px;
+}
 .timer .card-and-description {
   display: flex;
   flex-direction: column;
@@ -122,7 +132,7 @@ footer .attribution a {
   color: #8486a9;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 750px) {
   .stars {
     background-size: 75%;
     height: 100%;
@@ -135,8 +145,15 @@ footer .attribution a {
 
   .timer {
     height: 200px;
-    margin: 0 400px 200px;
+    margin: 0 340px 200px;
     justify-content: space-around;
+  }
+  .timer .shadow {
+    height: 58.5px;
+    width: 130px;
+    top: 58.5px;
+    z-index: 1;
+    border-radius: 7.5px;
   }
   .timer .card-and-description .card {
     width: 130px;
@@ -144,19 +161,31 @@ footer .attribution a {
   }
   .timer .card-and-description .card-top {
     height: 58.5px;
+    border-radius: 7.5px;
   }
   .timer .card-and-description .card-top p {
     top: 27px;
   }
   .timer .card-and-description .card-bottom {
     height: 58.5px;
-    margin-top: 1px;
+    border-radius: 7.5px;
     box-shadow: 0px 12px 3px -5px #191a24;
   }
   .timer .card-and-description span {
     letter-spacing: 5px;
     font-size: 12px;
     margin: 20px 0 0;
+  }
+
+  footer .hills-bg {
+    background-size: 100%;
+  }
+  footer .socials img {
+    margin: 0 15px;
+    width: 20px;
+  }
+  footer .socials img:hover {
+    cursor: pointer;
   }
 }
 
