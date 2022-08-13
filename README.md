@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/bgregi/launch-countdown](https://github.com/bgregi/launch-countdown)
-- Live Site URL: [https://bgregi.github.io/launch-countdown](https://bgregi.github.io/launch-countdown)
+- Solution URL: [https://github.com/bgregi/fm-launch-countdown](https://github.com/bgregi/fm-launch-countdown)
+- Live Site URL: [https://bgregi.github.io/fm-launch-countdown](https://bgregi.github.io/fm-launch-countdown)
 
 ## My process
 
